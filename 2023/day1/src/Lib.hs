@@ -18,9 +18,9 @@ combineDigits :: [Char] -> [Char] -> [Integer]
 combineDigits firsts lasts = zipWith combine firsts lasts
   where
     combine x y = read (x : [y])
-    
+
 firstNumbers :: [String] -> [Char]
-firstNumbers = map head 
+firstNumbers = map head
 
 lastNumbers :: [String] -> [Char]
-lastNumbers = map (head . reverse) 
+lastNumbers = map (head . reverse)
